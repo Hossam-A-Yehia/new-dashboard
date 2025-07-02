@@ -1,0 +1,23 @@
+.status-label {
+  font-weight: bold;
+}
+
+.status-1 {
+  color: blue;
+}
+
+.status-2 {
+  color: orange;
+}
+
+.status-3 {
+  color: green;
+}
+
+.status-4 {
+  color: red;
+}
+
+.status-5 {
+  color: gray;
+}

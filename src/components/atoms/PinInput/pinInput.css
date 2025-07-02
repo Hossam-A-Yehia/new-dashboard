@@ -1,0 +1,15 @@
+.input-pin {
+  @apply p-2 py-4 border rounded-md w-16 text-center shadow-sm focus:outline-none duration-300 transition;
+}
+
+.input-error {
+  @apply border-danger focus:ring-1 focus:ring-danger;
+}
+
+.input-valid {
+  @apply border-success focus:ring-1 focus:ring-success;
+}
+
+.input-default {
+  @apply focus:ring-1 focus:ring-primary;
+}

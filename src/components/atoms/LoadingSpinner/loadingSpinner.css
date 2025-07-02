@@ -1,0 +1,3 @@
+.loading-spinner {
+  @apply inline-flex items-center justify-center w-4 h-4 border-2 border-transparent border-t-white rounded-full animate-spin;
+}

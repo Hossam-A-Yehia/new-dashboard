@@ -1,0 +1,46 @@
+/* Background and Container */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #e0f2ff, #d6bcf1);
+}
+
+/* Icon Animation */
+.icon-container {
+  animation: scaleIn 0.6s ease-in-out;
+}
+
+/* Text Animations */
+.no-data-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.6s ease-out 0.3s forwards;
+}
+
+.no-data-text {
+  font-size: 1.125rem;
+  color: #805ad5;
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out 0.6s forwards;
+}
+
+/* Keyframes for Animations */
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

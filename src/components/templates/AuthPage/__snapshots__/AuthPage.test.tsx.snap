@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AuthPage Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="auth-page"
+    data-testid="auth-page"
+  >
+    <div
+      class="relative auth-info"
+    >
+      <div
+        class="auth-overlay"
+      />
+      <div
+        class="auth-content"
+      >
+        <img
+          alt="Logo"
+          data-testid="custom-image"
+          height="500"
+          src="mocked-logo.svg"
+          width="200"
+        />
+        <p
+          class="auth-description"
+        >
+          Translated: auth.title
+        </p>
+      </div>
+    </div>
+    <div
+      class="form-container"
+    >
+      <div
+        data-testid="form-component"
+      >
+        Mock Form
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,35 @@
+.alert-container {
+  @apply p-4 my-3 text-sm border rounded-lg;
+}
+
+.alert-success {
+  @apply bg-success/10 border-success text-success font-semibold;
+}
+
+.alert-warning {
+  @apply bg-warning/10 border-warning text-warning font-semibold;
+}
+
+.alert-error {
+  @apply bg-danger/10 border-danger text-danger font-semibold;
+}
+
+.alert-info {
+  @apply bg-info/10 border-info text-info font-semibold;
+}
+
+.icon-success {
+  @apply text-success font-semibold text-lg;
+}
+
+.icon-warning {
+  @apply text-warning font-semibold text-lg;
+}
+
+.icon-error {
+  @apply text-danger font-semibold text-sm;
+}
+
+.icon-info {
+  @apply text-info font-semibold text-lg;
+}

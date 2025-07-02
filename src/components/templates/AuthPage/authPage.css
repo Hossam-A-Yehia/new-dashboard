@@ -1,0 +1,23 @@
+.auth-page {
+  @apply flex h-screen flex-wrap;
+}
+
+.auth-info {
+  @apply w-full md:w-1/2 bg-auth-wallpaper bg-cover flex flex-col justify-center items-center relative;
+}
+
+.auth-overlay {
+  @apply absolute inset-0 bg-black opacity-70 z-0;
+}
+
+.auth-content {
+  @apply relative z-10 flex flex-col items-center text-center;
+}
+
+.auth-description {
+  @apply text-white mt-4 font-semibold text-lg;
+}
+
+.form-container {
+  @apply w-full md:w-1/2 flex flex-col justify-center items-center bg-white;
+}

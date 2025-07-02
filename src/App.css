@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: white !important;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: white !important;
+    border-bottom: 1px solid #ededed !important;
+  }
+  .App {
+    text-align: center;
+  }
+  .topbar-user {
+    background-color: white !important;
+    color: black !important;
+  }
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .main-text {
+    color: #f05b20;
+  }
+  .main-bg {
+    background-color: #f05b20;
+  }
+  .main-btn {
+    background-color: #f05b20;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .main-btn-outline {
+    color: #f05b20;
+    background-color: white;
+    border: 1px solid #f05b20;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .main-btn:hover {
+    background-color: #ee6a35;
+    color: white;
+  }
+  .main-btn-outline:hover {
+    background-color: #f05b20;
+    color: white;
+  }
+  
+  .pin-input {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pin-input-field {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ee6a35;
+    border-radius: 15px;
+  }
+  .text-secondary {
+    color: #a7acb1 !important;
+  }
+  a.nav-link.menu-link {
+    border-left: transparent 5px solid;
+    transition: 0.3s;
+  }
+  a.nav-link.menu-link.active,
+  a.nav-link.menu-link:hover {
+    border-left-color: #ee6a35;
+    border-radius: 7px;
+  }
+  .navbar-menu .navbar-nav .nav-link.active,
+  .navbar-menu .navbar-nav .nav-link:hover {
+    color: #ee6a35 !important;
+  }
+  
+  thead.table-light tr th {
+    background-color: #ee6a35 !important;
+    color: white;
+    font-weight: 400;
+  }
+  .page-content {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .modal-title {
+    color: #ee6a35 !important;
+  }
+  .actions-column {
+    width: 700px !important;
+  }
+  
+  .navbar-brand-box {
+    background-color: white !important;
+  }
+  
+  .nav-tabs-custom .nav-item .nav-link {
+    color: #f05b20 !important;
+  }
+  .nav-tabs-custom .nav-item .nav-link::after {
+    background: #f05b20 !important;
+  }
+  .nav-tabs-custom .nav-item .notifications::after {
+    background: transparent !important;
+  }
+  .card {
+    box-shadow: none !important;
+  }
+  .card-header {
+    border: none !important;
+  }
+  
+  .main-btn:disabled {
+    opacity: 0.7 !important;
+    background-color: #f05b20 !important;
+    color: white !important;
+  }
+  .search-box .form-control {
+    padding-left: 15px !important;
+  }
+  .btn:disabled,
+  .btn.disabled,
+  fieldset:disabled .btn {
+    background-color: #ee6a35 !important;
+    border-color: #ee6a35 !important;
+    color: white !important;
+  }
+  
+  .disabled {
+    pointer-events: none; /* Prevents click events */
+    opacity: 0.65; /* Optional: Adjusts the opacity to show it's disabled */
+  }
+  
+  .form-check-input {
+    border-color: #e91e63;
+  }
+  
+  table tbody .img-fluid {
+    height: 100%;
+  }
+  
+  button.btn.btn-icon.btn-topbar.btn-ghost-secondary.rounded-circle:hover {
+    color: #f44336;
+  }
+  
+  .active-item {
+    background-color: #f0f0f5; 
+    color: #ee6a35 !important;
+  
+  }
+  
+
+  .flex.items-center {
+    flex-direction: row;
+  }
+  
+  [dir='rtl'] .flex.items-center {
+    flex-direction: row-reverse;
+  }
+
+  .css-7mv2ev-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #ee6a35 !important;
+  }
