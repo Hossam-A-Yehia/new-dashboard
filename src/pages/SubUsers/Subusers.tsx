@@ -24,7 +24,6 @@ const SubUsers = () => {
 
   const [selectedRow, setSelectedRow] = useState<any>({});
   console.log(selectedRow.id)
-  const [modal, setModal] = useState(false);
   const [forceDeleteModal, setForceDeleteModal] = useState(false);
   const { mutateAsync: mutateForceDeleteUserAsync, isPending: isMutateForceDeleteLoading,
   } = useMutateForceDeleteBasicUser();
@@ -167,7 +166,6 @@ const SubUsers = () => {
         <ActionsMenu
           row={row}
           setSelectedRow={setSelectedRow}
-          setModal={setModal}
           setDeleteModal={setForceDeleteModal}
         />
       ),

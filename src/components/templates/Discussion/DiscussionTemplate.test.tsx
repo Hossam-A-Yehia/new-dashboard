@@ -1,15 +1,13 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { expect, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import DiscussionTemplate from "./DiscussionTemplate";
-import { useFetchUser } from "../../../hooks/useUser";
 import {
   useFetchDiscussion,
   useMutateAddMessage,
 } from "../../../hooks/useDiscussion";
 import { useQuery } from "../../../hooks/useQuery";
 import { toast } from "react-toastify";
-import React from "react";
-import { UserProvider } from "../../../context/UserContext";
+import { UserProvider, useUser } from "../../../context/UserContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 vi.mock("@/hooks/useUser", () => ({
@@ -37,7 +35,7 @@ describe("DiscussionTemplate", () => {
   const mockMutateAddMessage = vi.fn();
 
   beforeEach(() => {
-    (useFetchUser as any).mockReturnValue({ data: mockUserData });
+    (useUser as any).mockReturnValue({ data: mockUserData });
     (useFetchDiscussion as any).mockReturnValue({
       data: { payload: { data: mockMessages, last_page: 2 } },
       isLoading: false,
@@ -60,7 +58,7 @@ describe("DiscussionTemplate", () => {
     render(
       <QueryClientProvider client={queryClient}>
         <UserProvider>
-          <DiscussionTemplate rfqId="123" />
+          <DiscussionTemplate/>
         </UserProvider>
       </QueryClientProvider>
     );
@@ -72,7 +70,7 @@ describe("DiscussionTemplate", () => {
     render(
       <QueryClientProvider client={queryClient}>
         <UserProvider>
-          <DiscussionTemplate rfqId="123" />
+          <DiscussionTemplate  />
         </UserProvider>
       </QueryClientProvider>
     );
@@ -84,7 +82,7 @@ describe("DiscussionTemplate", () => {
     render(
       <QueryClientProvider client={queryClient}>
         <UserProvider>
-          <DiscussionTemplate rfqId="123" />
+          <DiscussionTemplate  />
         </UserProvider>
       </QueryClientProvider>
     );
@@ -101,7 +99,7 @@ describe("DiscussionTemplate", () => {
     render(
       <QueryClientProvider client={queryClient}>
         <UserProvider>
-          <DiscussionTemplate rfqId="123" />
+          <DiscussionTemplate  />
         </UserProvider>
       </QueryClientProvider>
     );

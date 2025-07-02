@@ -1,5 +1,4 @@
 import { ContainerProps } from "@/types/Atoms";
-import React from "react";
 
 export default function Container({
   children,

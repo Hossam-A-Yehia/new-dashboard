@@ -36,7 +36,7 @@ describe('ActionsMenu', () => {
   it('renders all buttons with correct labels', () => {
     render(
       <BrowserRouter>
-        <ActionsMenu {...props} />
+        <ActionsMenu VariantsCount={0} {...props} />
       </BrowserRouter>
     );
 
@@ -49,7 +49,7 @@ describe('ActionsMenu', () => {
   it('calls appropriate functions on button clicks', () => {
     render(
       <BrowserRouter>
-        <ActionsMenu {...props} />
+        <ActionsMenu VariantsCount={0} {...props} />
       </BrowserRouter>
     );
 

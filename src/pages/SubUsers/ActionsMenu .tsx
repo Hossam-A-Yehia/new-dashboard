@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 interface ActionsMenuProps {
   row: any;
   setSelectedRow: (row: any) => void;
-  setModal: (v: boolean) => void;
+  setModal?: (v: boolean) => void;
   setDeleteModal: (v: boolean) => void;
 }
 const ActionButton = ({

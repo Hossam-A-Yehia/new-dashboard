@@ -2,8 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { Formik, Form } from "formik";
 import FormField from "./FormField";
 import "@testing-library/jest-dom";
-import { expect } from "vitest";
-import React from "react";
+import { describe, expect, it } from "vitest";
 interface FormFieldProps {
   id: string;
   name: string;
